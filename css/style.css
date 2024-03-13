@@ -8,7 +8,6 @@ body{
     background: var(--color-terceary);
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 100vh;
 }
 .encabezado{
     display: grid;
@@ -53,16 +52,17 @@ a:hover{
     font-style: normal;
 }
 .contenido{
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .text{
     width: 100%;
-    height: auto;
+    padding: 0 15% 0 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15% 0 15%;
     gap: 20px;
 }
 .title{
@@ -91,12 +91,19 @@ a:hover{
     transform: scale(1.1);
     transition: 0.5s ease;
 }
-.boton h3{
+.boton h3, .boton2 h3{
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--color-secondary);
 }
 .img{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+.img2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +115,7 @@ a:hover{
     object-fit: contain;
 }
 .open-menu{
-    top: 20px;
+    top: 10px;
     right: 20px;
     display: none;
     position: absolute;
@@ -121,6 +128,133 @@ a:hover{
 }
 #check{
     display: none;
+}
+.aboutus{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.aboutus small{
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+.titlelarge .title2, .title3{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+.p2{
+    width: 40%;
+    font-size: 1.2rem;;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+.segundaseccion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.boton2{
+    display: flex;
+    width: 25%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+.boton2:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.textmenu{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 200px  1fr;
+    align-items: start;
+    text-align: center;
+}
+.imagenesmenu{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.textmenu small{
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+.f1, .f2, .f3{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.food1, .food2, .food3{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-alternative);
+}
+.title4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.services{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 200px  1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.serviceimg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.titlelarge small{
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+.s1, .s2, .s3{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.service1, .service2, .service3{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.title4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+.p3{
+    width: 70%;
+    font-size: 1.3rem;;
+    font-weight: 500;
+    color: var(--color-secondary);
 }
 @media (width < 800px){
     body{
@@ -148,6 +282,14 @@ a:hover{
     }
     .text{
         display: flex;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .text2{
+        order: 1;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -156,11 +298,35 @@ a:hover{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
+    .aboutus{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .segundaseccion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .title{
         font-size: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .titlelarge .title2{
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+    .title3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
     }
     .pharagrap .p{
         font-size: 1.2rem;
@@ -168,15 +334,66 @@ a:hover{
         justify-content: center;
         align-items: center;
     }
-    .boton{
+    .p2{
+        width: 90%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .boton, .boton2{
         width: 200px;
         height: auto;
         padding: 4%;
         font-size: 1rem;
     }
+    .img{
+        justify-content: center;
+        align-items:start;
+    }
     .img img{
         width: 300px;
         height: 300px;
+        justify-content: center;
         object-fit: contain;
+    }
+    .img2{
+        order: 2;
+    }
+    .img2 img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        order: 2;
+    }
+    .imagenesmenu{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .food1, .food2, .food3{
+        width: 300px;
+        height: 300px;
+    }
+    .imagenesmenu{
+        gap: 20px;
+    }
+    .f1, .f2, .f3{
+        width: 200px;
+        height: 200px;
+    }
+    .serviceimg{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 100px;
+    }
+    .service1, .service2, .service3{
+        width: 300px;
+        height: 300px;
+    }
+    .s1, .s2, .s3{
+        width: 200px;
+        height: 200px;
+    }
+    .textmenu{
+        height: 160vh;
     }
 }
