@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background: var(--color-terceary);
@@ -248,7 +249,7 @@ a:hover{
 .title4{
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--color-primary);
+    color: var(--color-cuaternary);
 }
 .p3{
     width: 70%;
@@ -276,7 +277,7 @@ a:hover{
 .title5{
     font-size: 2.2rem;
     font-weight: 300;
-    color: var(--color-cuaternary);
+    color: var(--color-primary);
 }
 .boton3{
     display: flex;
@@ -303,7 +304,7 @@ a:hover{
     font-size: 2rem;
     font-weight: 600;
     color: var(--color-secondary);
-    text-decoration: underline;
+    text-decoration: underline var(--color-primary);
 }
 .ours, .links, .informations, .contacts{
     list-style: none;
@@ -312,6 +313,18 @@ a:hover{
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+.icon{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3em;
+    color: var(--color-cuaternary);
+}
+.icon:hover{
+    transition: 0.2s ease;
+    color: var(--color-primary);
 }
 @media (width < 800px){
     body{
@@ -475,14 +488,11 @@ a:hover{
     .menulink{
         width: 80%;
         display: flex;
-        /* flex-direction: column; */
         justify-content: center;
-        /* align-items: center; */
     }
     .contact, .our{
         width: 99%;
         display: flex;
-        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
     }
@@ -491,5 +501,8 @@ a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .icon{
+        height: 5%;
     }
 }
