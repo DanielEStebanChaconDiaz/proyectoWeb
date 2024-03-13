@@ -4,3 +4,149 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    height: 100vh;
+    background:var(--color-primary) ;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+.title, ul, a{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: var(--color-terceary);
+    text-decoration: none;
+}
+.menu1, .title, .carrito{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40%;
+}
+.todos{
+    background-color: var(--color-primary);
+    width: 95%;
+    height: 95vh;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr;
+    grid-gap: 20px;
+}
+.camisetas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    object-fit: contain;
+    grid-gap: 20px;
+}
+.camisetas img{
+    width: 100%;
+    object-fit: contain;
+}
+.shirt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.shirt1{
+    width: 80%;
+    height: 80%;
+    background: url(/storage/img/shirt1v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.shirt1:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/shirt1v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.shirt2{
+    width: 80%;
+    height: 80%;
+    background: url(/storage/img/shirt2v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.shirt2:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/shirt2v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.shirt3{
+    width: 80%;
+    height: 80%;
+    background: url(/storage/img/shirt3v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.shirt3:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/shirt3v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.shirt4{
+    width: 80%;
+    height: 80%;
+    background: url(/storage/img/shirt4v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.shirt4:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/shirt4v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.shirt5{
+    width: 80%;
+    height: 80%;
+    background: url(/storage/img/shirt5v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.shirt5:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/shirt5v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.text{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--color-secondary);
+}
