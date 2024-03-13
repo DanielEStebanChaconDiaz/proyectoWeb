@@ -91,7 +91,7 @@ a:hover{
     transform: scale(1.1);
     transition: 0.5s ease;
 }
-.boton h3, .boton2 h3{
+.boton h3, .boton2 h3, .boton3 h3{
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--color-secondary);
@@ -256,6 +256,63 @@ a:hover{
     font-weight: 500;
     color: var(--color-secondary);
 }
+.cuadrito{
+    width: 80%;
+    height: 40vh;
+    background: var(--color-alternative);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emergent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title5{
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--color-cuaternary);
+}
+.boton3{
+    display: flex;
+    width: 25%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+.boton3:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.pie{
+    width: 100%;
+    display: grid;
+    padding-bottom: 3%;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.pie strong{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+.ours, .links, .informations, .contacts{
+    list-style: none;
+}
+.contimg{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 @media (width < 800px){
     body{
         background: var(--color-movile);
@@ -340,7 +397,7 @@ a:hover{
         font-weight: 500;
         text-align: center;
     }
-    .boton, .boton2{
+    .boton, .boton2, .boton3{
         width: 200px;
         height: auto;
         padding: 4%;
@@ -380,6 +437,9 @@ a:hover{
         width: 200px;
         height: 200px;
     }
+    .textmenu{
+        grid-template-rows: 100px 1fr;
+    }
     .serviceimg{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
@@ -394,6 +454,42 @@ a:hover{
         height: 200px;
     }
     .textmenu{
-        height: 160vh;
+        height: 150vh;
+    }
+    .services{
+        height: 150vh;
+        grid-template-rows: 140px 1fr;
+    }
+    .title5{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .pie{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: start;
+    }
+    .pie strong{
+        font-size: 1.2rem;
+    }
+    .menulink{
+        width: 80%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .contact, .our{
+        width: 99%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    .information{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
