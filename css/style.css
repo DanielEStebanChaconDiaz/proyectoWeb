@@ -1,8 +1,11 @@
 @import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     width: 100%;
@@ -30,6 +33,16 @@ body{
     color: var(--color-terceary);
     text-decoration: none;
 }
+.title{
+    font-size: 2rem;
+}
+a{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+h1{
+    font-size: 2rem;
+}
 .menu1, .title, .carrito{
     width: 100%;
     height: 100%;
@@ -40,23 +53,21 @@ body{
 .todos{
     background-color: var(--color-primary);
     width: 95%;
-    height: 95vh;
+    height: 80vh;
     padding: 5%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20px 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
+    overflow-y: scroll;
 }
 .camisetas{
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
-    object-fit: contain;
+    justify-items: center;
     grid-gap: 20px;
-}
-.camisetas img{
-    width: 100%;
-    object-fit: contain;
 }
 .shirt{
     display: flex;
@@ -66,8 +77,8 @@ body{
     border-radius: 20px;
 }
 .shirt1{
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 230px;;
     background: url(/storage/img/shirt1v1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -81,8 +92,8 @@ body{
     background-repeat: no-repeat;
 }
 .shirt2{
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 230px;
     background: url(/storage/img/shirt2v1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -96,8 +107,8 @@ body{
     background-repeat: no-repeat;
 }
 .shirt3{
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 230px;
     background: url(/storage/img/shirt3v1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -111,8 +122,8 @@ body{
     background-repeat: no-repeat;
 }
 .shirt4{
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 230px;
     background: url(/storage/img/shirt4v1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -126,8 +137,8 @@ body{
     background-repeat: no-repeat;
 }
 .shirt5{
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 230px;
     background: url(/storage/img/shirt5v1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -140,9 +151,153 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.hoodie1{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/hoodie1v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hoodie1:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/hoodie1v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.hoodie2{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/hoodie2v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hoodie2:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/hoodie2v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.hoodie3{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/hoodie3v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hoodie3:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/hoodie3v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.hoodie4{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/hoodie4v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hoodie4:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/hoodie4v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.hoodie5{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/hoodie5v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hoodie5:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/hoodie5v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pants1{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/pants1v1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pants2{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/pants2v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pants2:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/pants2v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pants3{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/pants3v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pants3:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/pants3v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pants4{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/pants4v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pants4:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/pants4v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pants5{
+    width: 200px;
+    height: 230px;
+    background: url(/storage/img/pants5v1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pants5:hover{
+    transition: 0.2s ease;
+    background: url(/storage/img/pants5v2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .text{
-    width: 80%;
-    height: 20%;
+    width: 200px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
