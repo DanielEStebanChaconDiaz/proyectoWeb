@@ -377,7 +377,7 @@ h1{
 .car i, .tshirts i, .all i, .abri i, .pantal i, .carm i, .piepag2 i, .piepag1 i{
     font-size: 1.4rem;
 }
-.car, .tshirts, .all, .abri, .pantal, .carm, .piepag2, .piepag1{
+.car, .tshirts, .all, .abri, .pantal, .carm, .piepag2, .piepag1, .caja{
     display: flex;
     align-items: center;
     gap: 5px;
@@ -456,6 +456,20 @@ h1{
     background: var(--color-terceary);
     border: none;
     border-radius: 20px;
+}
+.caja{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    box-shadow: var(--color-shadow-transparent);
+    border-radius: 20px;
+}
+.numero{
+    display: flex;
+    width: 20px;
+    border: 1px solid black;
+    padding: 2%;
+    text-align: center;
 }
 @media (width < 800px){
     .container{
@@ -550,6 +564,13 @@ h1{
         padding: 0;
         align-content: center;
     }
+    .maincarrito img{
+        height: auto;
+    }
+    .maincarrito{
+        grid-gap: 0;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+    }
     .clear{
         display: flex;
         align-items: center;
@@ -560,6 +581,7 @@ h1{
         height: 50px;
     }
     .comprarahora{
+        justify-content: start;
         flex-direction: column;
         gap: 0;
         align-items: center;
@@ -574,5 +596,10 @@ h1{
     }
     .nombre, .cantidad, .precio, .subtotal, .borrar{
         font-size: 0.8rem;
+    }
+    .caja{
+        box-shadow: none;
+        border-radius: none;
+        padding: 0;
     }
 }
