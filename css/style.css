@@ -366,7 +366,7 @@ a:hover{
     .contenido{
         width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 300px 1fr;
     }
     .aboutus{
         width: 100%;
