@@ -1,1 +1,1 @@
-![](https://github.com/DanielEStebanChaconDiaz/proyectoWeb/blob/parte_2/img/gif_prueba.gif)
+![](https://github.com/DanielEStebanChaconDiaz/proyectoWeb/blob/parte_2/storage/img/gif_prueba.gif)
