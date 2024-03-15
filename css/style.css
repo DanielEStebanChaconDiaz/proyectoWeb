@@ -24,7 +24,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     align-items: center;
 }
 .title, ul, a{
@@ -48,8 +48,14 @@ h1{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-left: 40%;
+    justify-content: space-evenly;
+    padding-left: 30%;
+}
+.piepag1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 30%;
 }
 .todos{
     background-color: var(--color-primary);
@@ -61,6 +67,20 @@ h1{
     grid-template-rows: 20px 1fr;
     grid-gap: 40px;
     overflow-y: scroll;
+    box-shadow: var(--color-shadow-transparent);
+    border-radius: 20px;
+}
+.maincarrito{
+    background-color: var(--color-primary);
+    width: 95%;
+    height: 80vh;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr;
+    grid-gap: 40px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     box-shadow: var(--color-shadow-transparent);
     border-radius: 20px;
 }
@@ -89,7 +109,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .shirt1:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/shirt1v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -104,7 +124,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .shirt2:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/shirt2v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -119,7 +139,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .shirt3:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/shirt3v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -134,7 +154,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .shirt4:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/shirt4v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -149,7 +169,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .shirt5:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/shirt5v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -164,7 +184,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .hoodie1:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/hoodie1v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -179,7 +199,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .hoodie2:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/hoodie2v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -194,7 +214,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .hoodie3:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/hoodie3v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -209,7 +229,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .hoodie4:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/hoodie4v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -224,7 +244,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .hoodie5:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/hoodie5v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -248,7 +268,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .pants2:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/pants2v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -263,7 +283,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .pants3:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/pants3v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -278,7 +298,7 @@ h1{
     border-top-right-radius: 20px;
 }
 .pants4:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/pants4v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -293,20 +313,27 @@ h1{
     border-top-right-radius: 20px;
 }
 .pants5:hover{
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     background: url(/storage/img/pants5v2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .text{
     width: 200px;
-    height: 60px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 2%;
     background-color: var(--color-secondary);
+}
+.text1{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
 }
 .open-menu{
     top: 10px;
@@ -330,28 +357,165 @@ h1{
     list-style: none;
     justify-content: space-around;
 }
+.p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.p button{
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-primary);
+    background: var(--color-terceary);
+}
+.carm a{
+    display: none;
+}
+.car i, .tshirts i, .all i, .abri i, .pantal i, .carm i, .piepag2 i, .piepag1 i{
+    font-size: 1.4rem;
+}
+.car, .tshirts, .all, .abri, .pantal, .carm, .piepag2, .piepag1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.carrito1{
+    display: none;
+}
+.piepag2{
+    display: none;
+}
+.productoscarsell{
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-radius: 20px;
+    box-shadow: var(--color-shadow-transparent);
+    align-items: center;
+}
+.productoscarsell img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 30px;
+    object-fit: contain;
+    padding: 2%;
+}
+.nombre, .cantidad, .precio, .subtotal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cant{
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+    padding-left: 2%;
+}
+.borrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+.borrar i{
+    font-size: 2rem;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.clear .vaciar{
+    cursor: pointer;
+    width: 200px;
+    height: 100%;
+    color: var(--color-primary);
+    background: var(--color-terceary);
+    border: none;
+    border-radius: 20px;
+}
+.comprarahora{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+}
+.pagar{
+    cursor: pointer;
+    width: 200px;
+    color: var(--color-primary);
+    background: var(--color-terceary);
+    border: none;
+    border-radius: 20px;
+}
 @media (width < 800px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 100px, 1fr;
+        grid-template-rows: 20px 1fr;
     }
-    .todos{
+    .todos, .maincarrito{
         width: 100%;
         height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .titulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
     }
     .menu{
-        height: 80px;
-        grid-template-rows: 100px 0px 0px;
+        top: 0;
+        height: 90px;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        box-shadow: var(--color-shadow-transparent);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: fixed;
+        background: var(--color-primary);
     }
     .menu1{
-        /* display: none; */
-        height: 0px;
+        position: absolute;
+    }
+    .piepag2{
+        display: flex;
+    }
+    .piepag1{
+        display: none;
     }
     .carrito{
         display: none;
     }
     .camisetas{
         grid-template-columns: 1fr;
+    }
+    .todos h1{
+        font-size: 1.2rem;
     }
     .menus{
         flex-direction: column;
@@ -373,8 +537,42 @@ h1{
     #check:checked~.menus{
         right: 0;
     }
-    .title, h1{
-        font-size: 1rem;
-        height: 100px;
+    .carrito1{
+        display: flex;
+    }
+    .carm a{
+        display: flex;
+    }
+    .productoscarsell{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        align-content: center;
+    }
+    .clear{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .clear .vaciar{
+        width: 100px;
+        height: 50px;
+    }
+    .comprarahora{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .total{
+        order: 2;
+    }
+    .pagar{
+        order: 1;
+        width: 100px;
+        height: 50px;
+    }
+    .nombre, .cantidad, .precio, .subtotal, .borrar{
+        font-size: 0.8rem;
     }
 }
